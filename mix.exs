@@ -22,7 +22,8 @@ defmodule SubarraySum.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:benchee, "~> 1.3"}
+      {:benchee, "~> 1.3"},
+      {:rustler, "~> 0.35.0", runtime: false}
     ]
   end
 

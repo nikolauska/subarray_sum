@@ -5,7 +5,8 @@ Solution for the problem of getting the count of sub arrays that sum up to a tar
 ## Setup
 
 1. Make sure you have Elixir installed. If not, follow the instructions on the [official website](https://elixir-lang.org/install.html).
-2. Run `mix deps.get` to install dependencies.
+2. Make sure you have Rust installed. If not, follow the instructions on the [official website](https://www.rust-lang.org/tools/install).
+3. Run `mix deps.get` to install dependencies.
 
 ## Running the tests
 

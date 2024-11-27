@@ -6,7 +6,11 @@ target_sum = 100
 
 Benchee.run(%{
   "100 items" => fn -> SubarraySum.count(arr_small, target_sum) end,
+  "100 items native" => fn -> SubarraySum.native_count(arr_small, target_sum) end,
   "1_000 items" => fn -> SubarraySum.count(arr_medium, target_sum) end,
+  "1_000 items native" => fn -> SubarraySum.native_count(arr_medium, target_sum) end,
   "10_000 items" => fn -> SubarraySum.count(arr_large, target_sum) end,
+  "10_000 items native" => fn -> SubarraySum.native_count(arr_large, target_sum) end,
   "100_000 items" => fn -> SubarraySum.count(arr_very_large, target_sum) end,
+  "100_000 items native" => fn -> SubarraySum.native_count(arr_very_large, target_sum) end,
 })

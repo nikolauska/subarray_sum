@@ -5,7 +5,15 @@ defmodule SubarraySumTest do
     assert SubarraySum.count([1, 2, 3, 4, 5], 9) == 2
   end
 
+  test "basic case native" do
+    assert SubarraySum.native_count([1, 2, 3, 4, 5], 9) == 2
+  end
+
   test "special case why start sums need to contain key 0" do
     assert SubarraySum.count([1, 1, 1], 1) == 3
+  end
+
+  test "special case why start sums need to contain key 0 native" do
+    assert SubarraySum.native_count([1, 1, 1], 1) == 3
   end
 end

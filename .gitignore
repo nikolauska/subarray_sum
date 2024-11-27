@@ -24,3 +24,6 @@ subarray_sum-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore native build artifacts (compiled NIFs).
+/priv/native

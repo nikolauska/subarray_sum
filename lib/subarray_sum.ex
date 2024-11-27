@@ -56,4 +56,11 @@ defmodule SubarraySum do
     # Extract the count
     |> elem(2)
   end
+
+  @doc """
+  Same as `count/2`, but with a native implementation in Rust using Rustler.
+  """
+  def native_count(arr, target) when is_list(arr) and is_integer(target) and target > 0 do
+    SubarraySum.Native.count(arr, target)
+  end
 end
